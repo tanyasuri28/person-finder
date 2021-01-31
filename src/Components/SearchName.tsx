@@ -9,7 +9,10 @@ const SearchName: React.FC = () => {
   const dispatch = useDispatch();
 
   const StyledInput = styled.input`
-    width: 200px;
+    width: 50%;
+    background-color: lightgrey;
+    border: 0;
+    height: 25px;
   `;
 
   const handleOnChange = useCallback(
