@@ -9,6 +9,7 @@ import {
 import "./App.css";
 
 // given more time, would add tests
+// didn't get a chance to include air logo
 function App() {
   return (
     <AppStyleContainer>
