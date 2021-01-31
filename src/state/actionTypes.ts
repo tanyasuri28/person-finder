@@ -1,0 +1,1 @@
+export const SET_PERSON_SEARCH = "SET_PERSON_SEARCH";

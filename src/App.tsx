@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import SearchName from "./Components/SearchName";
+import PersonDisplayContainer from "./Components/PersonDisplayContainer";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">the person finder</div>
+      <div className="App">
+        if you cant find someone you came to the right place
+      </div>
+      <SearchName />
+      <PersonDisplayContainer />
+    </>
   );
 }
 
