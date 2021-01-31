@@ -1,5 +1,5 @@
-import { useCallback, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useCallback } from "react";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { setPersonSearch } from "../state/setPersonSearch.action";
 
@@ -23,9 +23,6 @@ const SearchName: React.FC = () => {
         nameRegex.test(person.name)
       );
 
-      console.log("inputValue", inputValue);
-      console.log("filteredData", filteredData);
-      // setMatchingPersons(filteredData);
       dispatch(setPersonSearch(filteredData));
     },
     [dispatch]
@@ -33,7 +30,7 @@ const SearchName: React.FC = () => {
 
   return (
     <>
-      <StyledInput placeholder="type a name" onChange={handleOnChange} />
+      <StyledInput placeholder="Type a name..." onChange={handleOnChange} />
     </>
   );
 };

@@ -23,7 +23,6 @@ export const StyledName = styled.div`
 `;
 
 const PersonDisplayItem: React.FC<Props> = ({ person }) => {
-  console.log("person-PersonDisplayItem", person);
   return (
     <>
       <StyledCard>

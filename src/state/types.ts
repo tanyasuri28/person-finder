@@ -10,7 +10,3 @@ export interface Person {
   avatar: string;
   description: string;
 }
-
-export interface Persons {
-  Persons: Person[];
-}
