@@ -1,32 +1,14 @@
 import React from "react";
-import styled from "styled-components";
 import SearchName from "./Components/SearchName";
 import PersonDisplayContainer from "./Components/PersonDisplayContainer";
+import {
+  AppStyleContainer,
+  StyledText,
+  StyledHeader,
+} from "./Components/styles";
 import "./App.css";
 
-const AppStyleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const StyledText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  padding-bottom: 10px;
-`;
-
-const StyledHeader = styled.h2`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
-  padding-bottom: 10px;
-  color: midnightblue;
-`;
-
+// given more time, would add tests
 function App() {
   return (
     <AppStyleContainer>
