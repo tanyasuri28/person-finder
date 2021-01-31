@@ -8,6 +8,18 @@ interface Props {
 export const StyledCard = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+`;
+
+const StyledInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+`;
+
+export const StyledName = styled.div`
+  padding-bottom: 4px;
+  font-weight: bold;
 `;
 
 const PersonDisplayItem: React.FC<Props> = ({ person }) => {
@@ -16,9 +28,11 @@ const PersonDisplayItem: React.FC<Props> = ({ person }) => {
     <>
       <StyledCard>
         <img height="100px" width="100px" src={person.avatar} />
-        <div>{person.name}</div>
+        <StyledInfo>
+          <StyledName> {person.name}</StyledName>
+          <div> {person.description}</div>
+        </StyledInfo>
       </StyledCard>
-      <div>{person.description}</div>
     </>
   );
 };

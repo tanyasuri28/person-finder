@@ -1,11 +1,16 @@
 import { useCallback, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import styled from "styled-components";
 import { setPersonSearch } from "../state/setPersonSearch.action";
 
 import personData from "../constants /data.json";
 
 const SearchName: React.FC = () => {
   const dispatch = useDispatch();
+
+  const StyledInput = styled.input`
+    width: 200px;
+  `;
 
   const handleOnChange = useCallback(
     (e) => {
@@ -25,7 +30,7 @@ const SearchName: React.FC = () => {
 
   return (
     <>
-      <input onChange={handleOnChange} />
+      <StyledInput placeholder="type a name" onChange={handleOnChange} />
     </>
   );
 };
